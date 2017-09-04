@@ -1,4 +1,4 @@
-const { requestedFields } = require('introspector');
+const { requestedFields } = require('./introspector');
 
 const cmodule = {
   /**
