@@ -59,10 +59,10 @@ const cmodule = {
   arangoSugarObject(params = [], resolvers = {}) {
     const o = {};
     if (params.includes('id')) {
-      o.id = function (obj) { return obj._key; };
+      o.id = obj => obj.key || obj._discriminators._key
     }
     if (params.includes('revision')) {
-      o.revision = function (obj) { return obj._rev; };
+      o.revision = obj => obj.revision || obj._discriminators._rev;
     }
     return Object.assign(o, resolvers);
   },

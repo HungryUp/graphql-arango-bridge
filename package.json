@@ -1,6 +1,6 @@
 {
   "name": "graphql-arango-bridge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Some tools for an easier graphql management with arangodb",
   "main": "index.js",
   "scripts": {
